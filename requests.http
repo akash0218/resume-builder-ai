@@ -1,0 +1,309 @@
+### Resume AI Backend - Example Requests
+
+## Health Check (No Auth)
+GET http://localhost:8080/health
+
+### Analyze JD - Java Full Stack Role
+POST http://localhost:8080/v1/analyze-jd
+X-API-Key: your_backend_api_key
+Content-Type: application/json
+
+{
+  "jd_text": "We are hiring a Senior Java Full Stack Developer with 7+ years of experience. You will work on building microservices using Spring Boot, React for the frontend, and AWS infrastructure. Must have experience with Docker, Kubernetes, PostgreSQL, REST APIs, and CI/CD pipelines. The ideal candidate will have worked on cloud-native applications, understands OAuth2/JWT authentication, and can mentor junior developers. You should be comfortable with agile development and Git."
+}
+
+### Generate Resume (After analyzing JD)
+POST http://localhost:8080/v1/generate-resume
+X-API-Key: your_backend_api_key
+Content-Type: application/json
+
+{
+  "jd_analysis": {
+    "detected_role_family": "java_fullstack",
+    "domain": "technology",
+    "domain_keywords": ["microservices", "cloud-native"],
+    "stream_scores": {
+      "mainframe": 0,
+      "java_fullstack": 95,
+      "react_frontend": 20,
+      "angular_fullstack": 10,
+      "frontend_general": 15,
+      "backend_general": 40,
+      "data_engineer": 0,
+      "etl_developer": 0,
+      "bi_powerbi": 0,
+      "data_scientist": 0,
+      "python_backend": 10,
+      "dotnet": 5,
+      "embedded": 0,
+      "mulesoft": 0
+    },
+    "role_emphasis": {
+      "type": "backend",
+      "ratio": "60/40"
+    },
+    "primary_skills": [
+      "Java",
+      "Spring Boot",
+      "React",
+      "Microservices",
+      "REST APIs",
+      "PostgreSQL"
+    ],
+    "secondary_skills": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "OAuth2",
+      "JWT",
+      "CI/CD"
+    ],
+    "tooling": [
+      "Git",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "AWS"
+    ],
+    "weighted_keywords": [
+      {
+        "keyword": "Spring Boot",
+        "weight": 10,
+        "type": "skill"
+      },
+      {
+        "keyword": "React",
+        "weight": 8,
+        "type": "skill"
+      },
+      {
+        "keyword": "Microservices",
+        "weight": 9,
+        "type": "skill"
+      },
+      {
+        "keyword": "Docker",
+        "weight": 7,
+        "type": "tool"
+      },
+      {
+        "keyword": "AWS",
+        "weight": 6,
+        "type": "cloud"
+      }
+    ]
+  },
+  "role_profile": {
+    "headline_title_templates": [
+      "Java Full Stack Developer",
+      "Full Stack Engineer (Java, React/Angular)"
+    ],
+    "ecosystem_baseline": [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "Microservices",
+      "SQL",
+      "PostgreSQL",
+      "Oracle",
+      "JUnit",
+      "Mockito",
+      "Swagger/OpenAPI",
+      "Git",
+      "CI/CD",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "S3",
+      "ECS",
+      "RDS",
+      "CloudWatch",
+      "OAuth2",
+      "JWT",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 4,
+      "Backend": 6,
+      "Cloud": 2,
+      "CI_CD": 2,
+      "Data": 0,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "React + Spring Boot",
+        "primary": [
+          "React",
+          "TypeScript",
+          "Spring Boot"
+        ],
+        "secondary": [
+          "Redux",
+          "REST APIs"
+        ],
+        "cloud_and_devops": [
+          "AWS",
+          "Docker",
+          "CI/CD"
+        ],
+        "data_or_analytics": []
+      }
+    ]
+  },
+  "experiences": [
+    {
+      "company": "Acme Tech Solutions",
+      "title": "Senior Full Stack Developer",
+      "start": "2021-03",
+      "end": "2024-01",
+      "domain": "fintech",
+      "notes": "Led the development of a payment processing microservices platform. Built REST APIs using Spring Boot, frontend dashboards in React with Redux, deployed on AWS ECS with Docker. Implemented OAuth2 authentication, worked with PostgreSQL and Redis caching. Set up CI/CD pipelines using Jenkins. Team of 5 engineers, mentored 2 junior developers."
+    },
+    {
+      "company": "Global Finance Inc",
+      "title": "Full Stack Developer",
+      "start": "2019-06",
+      "end": "2021-02",
+      "domain": "banking",
+      "notes": "Developed loan management system with Spring Boot backend and Angular frontend. Designed and implemented database schemas in PostgreSQL. Created REST APIs for customer and loan data. Deployed on AWS using ECS and S3. Wrote unit tests with JUnit and Mockito. Collaborated with QA team using Agile methodologies."
+    },
+    {
+      "company": "StartUp XYZ",
+      "title": "Backend Developer",
+      "start": "2018-01",
+      "end": "2019-05",
+      "domain": "saas",
+      "notes": "Built e-commerce backend using Node.js and Express, later migrated to Java Spring Boot. Worked with MySQL and later PostgreSQL. Implemented JWT authentication and role-based access control. Created Docker containers and basic CI/CD automation. Handled customer API integrations with third-party services."
+    }
+  ],
+  "allowed_tech": [
+    "Java",
+    "Spring Boot",
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Redux",
+    "REST APIs",
+    "PostgreSQL",
+    "SQL",
+    "JUnit",
+    "Mockito",
+    "Git",
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "S3",
+    "RDS",
+    "CloudWatch",
+    "CI/CD",
+    "Jenkins",
+    "OAuth2",
+    "JWT",
+    "Agile"
+  ],
+  "ecosystem_baseline": [
+    "Java",
+    "Spring Boot",
+    "REST APIs",
+    "Microservices",
+    "SQL",
+    "PostgreSQL",
+    "Oracle",
+    "JUnit",
+    "Mockito",
+    "Swagger/OpenAPI",
+    "Git",
+    "CI/CD",
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "S3",
+    "ECS",
+    "RDS",
+    "CloudWatch",
+    "OAuth2",
+    "JWT",
+    "Agile"
+  ],
+  "bucket_targets": {
+    "UI": 4,
+    "Backend": 6,
+    "Cloud": 2,
+    "CI_CD": 2,
+    "Data": 0,
+    "Analytics": 0,
+    "SDLC": 1
+  },
+  "alignment_percents": [
+    95,
+    85,
+    70
+  ],
+  "alt_stacks": [
+    {
+      "name": "React + Spring Boot",
+      "primary": [
+        "React",
+        "TypeScript",
+        "Spring Boot"
+      ],
+      "secondary": [
+        "Redux",
+        "REST APIs"
+      ],
+      "cloud_and_devops": [
+        "AWS",
+        "Docker",
+        "CI/CD"
+      ],
+      "data_or_analytics": []
+    }
+  ]
+}
+
+### Repair Resume (if validation fails)
+POST http://localhost:8080/v1/repair-resume
+X-API-Key: your_backend_api_key
+Content-Type: application/json
+
+{
+  "bad_output": {},
+  "validation_errors": [
+    "summary_bullets must have exactly 10 items",
+    "experience 1 has 12 bullets instead of 15"
+  ],
+  "allowed_tech": [
+    "Java",
+    "Spring Boot",
+    "React"
+  ],
+  "ecosystem_baseline": [
+    "Java",
+    "Spring Boot",
+    "REST APIs",
+    "PostgreSQL",
+    "Docker",
+    "AWS"
+  ],
+  "bucket_targets": {
+    "UI": 4,
+    "Backend": 6,
+    "Cloud": 2,
+    "CI_CD": 2,
+    "Data": 0,
+    "Analytics": 0,
+    "SDLC": 1
+  }
+}
+
+### Notes for VS Code REST Client Extension
+
+1. Install: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+2. Create a file named "requests.http" in your project
+3. Paste the above content
+4. Use the "Send Request" link above each request
+5. Replace "your_backend_api_key" with your actual API key from .env

@@ -1,0 +1,633 @@
+{
+  "mainframe": {
+    "headline_title_templates": [
+      "Senior Mainframe Developer",
+      "Mainframe Application Developer"
+    ],
+    "ecosystem_baseline": [
+      "COBOL",
+      "JCL",
+      "DB2",
+      "CICS",
+      "VSAM",
+      "IMS",
+      "TSO/ISPF",
+      "SPUFI",
+      "REXX",
+      "Sort",
+      "Endevor",
+      "Changeman",
+      "CA7",
+      "Control-M",
+      "File-AID",
+      "IBM Mainframe",
+      "Unit Testing",
+      "Agile",
+      "Git"
+    ],
+    "bucket_targets": {
+      "UI": 0,
+      "Backend": 11,
+      "Cloud": 0,
+      "CI_CD": 2,
+      "Data": 1,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "Mainframe Modernization",
+        "primary": ["COBOL", "DB2", "CICS"],
+        "secondary": ["APIs", "Batch"],
+        "cloud_and_devops": ["Git", "CI/CD"],
+        "data_or_analytics": ["SQL"]
+      }
+    ]
+  },
+  "java_fullstack": {
+    "headline_title_templates": [
+      "Java Full Stack Developer",
+      "Full Stack Engineer (Java, React/Angular)"
+    ],
+    "ecosystem_baseline": [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "Microservices",
+      "SQL",
+      "PostgreSQL",
+      "Oracle",
+      "JUnit",
+      "Mockito",
+      "Swagger/OpenAPI",
+      "Git",
+      "CI/CD",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "S3",
+      "ECS",
+      "RDS",
+      "CloudWatch",
+      "OAuth2",
+      "JWT",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 4,
+      "Backend": 6,
+      "Cloud": 2,
+      "CI_CD": 2,
+      "Data": 0,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "React + Spring Boot",
+        "primary": ["React", "TypeScript", "Spring Boot"],
+        "secondary": ["Redux", "REST APIs"],
+        "cloud_and_devops": ["AWS", "Docker", "CI/CD"],
+        "data_or_analytics": []
+      },
+      {
+        "name": "Angular + Spring Boot",
+        "primary": ["Angular", "RxJS", "Spring Boot"],
+        "secondary": ["REST APIs"],
+        "cloud_and_devops": ["AWS", "CI/CD"],
+        "data_or_analytics": []
+      },
+      {
+        "name": "Node + React",
+        "primary": ["React", "Node.js", "Express"],
+        "secondary": ["REST APIs"],
+        "cloud_and_devops": ["AWS", "Docker"],
+        "data_or_analytics": []
+      }
+    ]
+  },
+  "react_frontend": {
+    "headline_title_templates": [
+      "React Developer",
+      "Frontend Engineer (React)"
+    ],
+    "ecosystem_baseline": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Redux",
+      "React Router",
+      "REST APIs",
+      "Jest",
+      "RTL",
+      "Git",
+      "CI/CD",
+      "Docker",
+      "AWS",
+      "CloudFront",
+      "S3",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 9,
+      "Backend": 2,
+      "Cloud": 1,
+      "CI_CD": 2,
+      "Data": 0,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "React + Node",
+        "primary": ["React", "Node.js"],
+        "secondary": ["Express", "REST APIs"],
+        "cloud_and_devops": ["AWS", "CI/CD"],
+        "data_or_analytics": []
+      }
+    ]
+  },
+  "angular_fullstack": {
+    "headline_title_templates": [
+      "Java + Angular Full Stack Developer",
+      "Full Stack Engineer (Angular, Spring Boot)"
+    ],
+    "ecosystem_baseline": [
+      "Angular",
+      "TypeScript",
+      "RxJS",
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "SQL",
+      "JUnit",
+      "Git",
+      "CI/CD",
+      "Docker",
+      "AWS",
+      "OAuth2",
+      "JWT",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 6,
+      "Backend": 5,
+      "Cloud": 2,
+      "CI_CD": 1,
+      "Data": 0,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "Angular + Spring Boot",
+        "primary": ["Angular", "RxJS", "Spring Boot"],
+        "secondary": ["REST APIs"],
+        "cloud_and_devops": ["AWS", "CI/CD"],
+        "data_or_analytics": []
+      },
+      {
+        "name": "React + Spring Boot",
+        "primary": ["React", "Spring Boot"],
+        "secondary": ["REST APIs"],
+        "cloud_and_devops": ["AWS", "Docker"],
+        "data_or_analytics": []
+      }
+    ]
+  },
+  "backend_general": {
+    "headline_title_templates": [
+      "Backend Developer",
+      "Software Engineer (Backend)"
+    ],
+    "ecosystem_baseline": [
+      "REST APIs",
+      "Microservices",
+      "SQL",
+      "Caching",
+      "Authentication",
+      "OAuth2",
+      "JWT",
+      "Git",
+      "CI/CD",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Monitoring",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 1,
+      "Backend": 10,
+      "Cloud": 2,
+      "CI_CD": 1,
+      "Data": 0,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "Java Backend",
+        "primary": ["Java", "Spring Boot"],
+        "secondary": ["REST APIs", "SQL"],
+        "cloud_and_devops": ["AWS", "Docker"],
+        "data_or_analytics": []
+      },
+      {
+        "name": "Node Backend",
+        "primary": ["Node.js", "Express"],
+        "secondary": ["REST APIs", "SQL"],
+        "cloud_and_devops": ["AWS", "CI/CD"],
+        "data_or_analytics": []
+      }
+    ]
+  },
+  "frontend_general": {
+    "headline_title_templates": [
+      "Frontend Developer",
+      "UI Engineer"
+    ],
+    "ecosystem_baseline": [
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "React",
+      "Angular",
+      "Testing",
+      "Git",
+      "CI/CD",
+      "REST APIs",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 10,
+      "Backend": 1,
+      "Cloud": 1,
+      "CI_CD": 2,
+      "Data": 0,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "React UI",
+        "primary": ["React", "TypeScript"],
+        "secondary": ["Redux"],
+        "cloud_and_devops": ["CI/CD"],
+        "data_or_analytics": []
+      },
+      {
+        "name": "Angular UI",
+        "primary": ["Angular", "RxJS"],
+        "secondary": ["TypeScript"],
+        "cloud_and_devops": ["CI/CD"],
+        "data_or_analytics": []
+      }
+    ]
+  },
+  "data_engineer": {
+    "headline_title_templates": [
+      "Data Engineer",
+      "Data Platform Engineer"
+    ],
+    "ecosystem_baseline": [
+      "Python",
+      "SQL",
+      "Spark",
+      "PySpark",
+      "ETL",
+      "ELT",
+      "Airflow",
+      "dbt",
+      "AWS",
+      "S3",
+      "Glue",
+      "Lambda",
+      "Redshift",
+      "Snowflake",
+      "Databricks",
+      "Kafka",
+      "Parquet",
+      "CI/CD",
+      "Git",
+      "Data Modeling",
+      "Monitoring",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 0,
+      "Backend": 2,
+      "Cloud": 4,
+      "CI_CD": 2,
+      "Data": 6,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "AWS Lakehouse",
+        "primary": ["S3", "Glue", "Redshift"],
+        "secondary": ["Python", "Spark"],
+        "cloud_and_devops": ["AWS", "CI/CD"],
+        "data_or_analytics": ["Parquet", "Data Modeling"]
+      },
+      {
+        "name": "Snowflake + dbt",
+        "primary": ["Snowflake", "dbt"],
+        "secondary": ["SQL", "Python"],
+        "cloud_and_devops": ["CI/CD"],
+        "data_or_analytics": ["Modeling"]
+      },
+      {
+        "name": "Databricks",
+        "primary": ["Databricks", "Spark"],
+        "secondary": ["Python", "SQL"],
+        "cloud_and_devops": ["CI/CD"],
+        "data_or_analytics": ["Delta"]
+      }
+    ]
+  },
+  "etl_developer": {
+    "headline_title_templates": [
+      "ETL Developer",
+      "Data Integration Developer"
+    ],
+    "ecosystem_baseline": [
+      "ETL",
+      "SQL",
+      "DataStage",
+      "Informatica",
+      "Ab Initio",
+      "Matillion",
+      "Python",
+      "Shell",
+      "Scheduling",
+      "Control-M",
+      "Autosys",
+      "Snowflake",
+      "Oracle",
+      "SQL Server",
+      "Git",
+      "CI/CD",
+      "AWS",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 0,
+      "Backend": 2,
+      "Cloud": 2,
+      "CI_CD": 2,
+      "Data": 8,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "Cloud ETL",
+        "primary": ["Matillion", "Snowflake"],
+        "secondary": ["SQL"],
+        "cloud_and_devops": ["AWS", "CI/CD"],
+        "data_or_analytics": ["ETL"]
+      }
+    ]
+  },
+  "bi_powerbi": {
+    "headline_title_templates": [
+      "Power BI Developer",
+      "BI Analyst (Power BI)"
+    ],
+    "ecosystem_baseline": [
+      "Power BI",
+      "DAX",
+      "Power Query",
+      "SQL",
+      "Data Modeling",
+      "Star Schema",
+      "Excel",
+      "Stakeholders",
+      "KPIs",
+      "Reporting",
+      "Azure",
+      "AWS",
+      "Git",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 0,
+      "Backend": 1,
+      "Cloud": 1,
+      "CI_CD": 1,
+      "Data": 4,
+      "Analytics": 7,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "BI + SQL",
+        "primary": ["Power BI", "SQL"],
+        "secondary": ["DAX"],
+        "cloud_and_devops": ["Git"],
+        "data_or_analytics": ["KPIs", "Reporting"]
+      }
+    ]
+  },
+  "data_scientist": {
+    "headline_title_templates": [
+      "Data Scientist",
+      "Machine Learning Engineer (Applied)"
+    ],
+    "ecosystem_baseline": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "ML",
+      "Feature Engineering",
+      "Model Evaluation",
+      "SQL",
+      "Jupyter",
+      "AWS",
+      "SageMaker",
+      "Docker",
+      "Git",
+      "CI/CD",
+      "Statistics",
+      "A/B Testing"
+    ],
+    "bucket_targets": {
+      "UI": 0,
+      "Backend": 1,
+      "Cloud": 2,
+      "CI_CD": 1,
+      "Data": 6,
+      "Analytics": 4,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "ML Pipeline",
+        "primary": ["Python", "Scikit-learn"],
+        "secondary": ["SQL"],
+        "cloud_and_devops": ["AWS", "Docker"],
+        "data_or_analytics": ["Model Evaluation"]
+      }
+    ]
+  },
+  "python_backend": {
+    "headline_title_templates": [
+      "Python Developer",
+      "Backend Engineer (Python)"
+    ],
+    "ecosystem_baseline": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+      "SQL",
+      "PostgreSQL",
+      "Redis",
+      "JWT",
+      "OAuth2",
+      "Docker",
+      "CI/CD",
+      "Git",
+      "AWS",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 1,
+      "Backend": 10,
+      "Cloud": 2,
+      "CI_CD": 1,
+      "Data": 0,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "API + Data",
+        "primary": ["FastAPI", "PostgreSQL"],
+        "secondary": ["Python", "SQL"],
+        "cloud_and_devops": ["AWS", "Docker"],
+        "data_or_analytics": []
+      }
+    ]
+  },
+  "dotnet": {
+    "headline_title_templates": [
+      ".NET Full Stack Developer",
+      ".NET Developer"
+    ],
+    "ecosystem_baseline": [
+      "C#",
+      ".NET",
+      "ASP.NET Core",
+      "Web API",
+      "SQL Server",
+      "Entity Framework",
+      "Azure",
+      "CI/CD",
+      "Git",
+      "Docker",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 3,
+      "Backend": 8,
+      "Cloud": 2,
+      "CI_CD": 1,
+      "Data": 0,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": ".NET APIs",
+        "primary": ["ASP.NET Core", "Web API"],
+        "secondary": ["SQL Server"],
+        "cloud_and_devops": ["Azure", "CI/CD"],
+        "data_or_analytics": []
+      }
+    ]
+  },
+  "embedded": {
+    "headline_title_templates": [
+      "Embedded Software Engineer",
+      "Firmware Engineer"
+    ],
+    "ecosystem_baseline": [
+      "C",
+      "C++",
+      "RTOS",
+      "Embedded Linux",
+      "Device Drivers",
+      "Debugging",
+      "UART",
+      "I2C",
+      "SPI",
+      "Git",
+      "CI/CD",
+      "Unit Testing",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 0,
+      "Backend": 11,
+      "Cloud": 0,
+      "CI_CD": 2,
+      "Data": 1,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "Firmware",
+        "primary": ["C", "RTOS"],
+        "secondary": ["Debugging"],
+        "cloud_and_devops": ["Git"],
+        "data_or_analytics": []
+      }
+    ]
+  },
+  "mulesoft": {
+    "headline_title_templates": [
+      "MuleSoft Developer",
+      "Integration Engineer (MuleSoft)"
+    ],
+    "ecosystem_baseline": [
+      "MuleSoft",
+      "Anypoint Studio",
+      "API-led Connectivity",
+      "REST APIs",
+      "SOAP",
+      "RAML",
+      "OAuth2",
+      "JWT",
+      "CI/CD",
+      "Git",
+      "Monitoring",
+      "Agile"
+    ],
+    "bucket_targets": {
+      "UI": 0,
+      "Backend": 10,
+      "Cloud": 2,
+      "CI_CD": 2,
+      "Data": 0,
+      "Analytics": 0,
+      "SDLC": 1
+    },
+    "alt_stacks": [
+      {
+        "name": "API Integration",
+        "primary": ["MuleSoft", "REST APIs"],
+        "secondary": ["OAuth2"],
+        "cloud_and_devops": ["CI/CD"],
+        "data_or_analytics": []
+      }
+    ]
+  }
+}
