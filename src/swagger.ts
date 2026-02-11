@@ -13,6 +13,10 @@ const options = {
     },
     servers: [
       {
+        url: "https://resume-builder-ai-phr2.onrender.com",
+        description: "Production server",
+      },
+      {
         url: "http://localhost:8080",
         description: "Development server",
       },
@@ -97,7 +101,10 @@ const options = {
       },
     },
   },
-  apis: ["./src/routes/*.ts"],
+  apis: [
+    "./src/routes/*.ts",   // Development
+    "./dist/routes/*.js",  // Production
+  ],
 };
 
 export const swaggerSpec = (swaggerJsdoc as any)(options);
