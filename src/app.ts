@@ -17,7 +17,13 @@ import suggestTechStackRoutes from "./routes/suggestTechStack";
 const app: Express = express();
 
 // ===== Security Middleware =====
-app.use(helmet());
+// Disable CSP for Swagger UI to work properly
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false,
+  })
+);
 
 // ===== CORS =====
 const allowedOrigin = process.env.ALLOWED_ORIGIN || "http://localhost:5173";
